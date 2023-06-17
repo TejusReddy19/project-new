@@ -1,11 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+from pytube import YouTube
+from pytube import Search
 
 # Set up your Spotify API credentials
 client_id = '5406074d160144aeba00bdb4092be110'
@@ -28,13 +24,6 @@ track_names = [item['track']['name'] for item in playlist['items']]
 print("Track Names:")
 for name in track_names:
     print(name)
-
-
-# In[ ]:
-
-
-from pytube import YouTube
-from pytube import Search
 
 # Provide the video name to search for
 for video_name in track_names:
