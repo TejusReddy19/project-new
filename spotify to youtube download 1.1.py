@@ -4,15 +4,15 @@ from pytube import YouTube
 from pytube import Search
 
 # Set up your Spotify API credentials
-client_id = '5406074d160144aeba00bdb4092be110'
-client_secret = 'e7d04785254746c4ab5fc0d8cf4c5e9c'
+client_id = 'YOUR_ID'
+client_secret = 'YOUR_CODE'
 
 # Authenticate and authorize your application
 auth_manager = SpotifyClientCredentials(client_id=client_id, client_secret=client_secret)
 sp = spotipy.Spotify(auth_manager=auth_manager)
 
 # Specify the playlist ID
-playlist_id = '37i9dQZF1DX4dyzvuaRJ0n'
+playlist_id = 'YOUR ID'
 
 # Make the API request to get the playlist tracks
 playlist = sp.playlist_tracks(playlist_id)
@@ -34,24 +34,5 @@ for video_name in track_names:
     print(video_url)
     yt = YouTube(video_url)
     video_stream = yt.streams.get_highest_resolution()
-    output_path = "C:/Users/tejus/OneDrive/Desktop/this is vid"
+    output_path = "your output path"
     video_stream.download(output_path)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
