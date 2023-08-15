@@ -16,3 +16,9 @@ Once your application is created, you'll be redirected to the application's dash
 
 You can now use the Client ID and Client Secret in your application to authenticate and interact with the Spotify API.
 
+
+
+
+THIS IS NOT COMPLETE JUST CODEING PART
+FRONT END PART IS PENDING...
+
